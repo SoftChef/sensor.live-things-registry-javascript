@@ -1,0 +1,14 @@
+{
+  "name": "sensor.live-things-registry",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    
+  },
+  "author": "SoftChef",
+  "license": "SoftChef",
+  "dependencies": {
+    "node-forge": "^0.7.5"
+  }
+}
