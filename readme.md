@@ -2,13 +2,18 @@
 
 ## Overview
 
-這份文件將幫助你加速硬體連接上AWS IoT, 過程主要是加速憑證交換的流程, 讓硬體使用AWS合規的認證方式進行連接.
+This document will help your device connect to AWS IoT quickly. Mainly to speed up the process of certificate exchanging, make hardware use AWS legally authentication method to connect.
 
 ## Prepare
 
 Packages:
 
 - AWS IoT SDK for JavaScript https://github.com/aws/aws-iot-device-sdk-js
+
+sensor.live
+
+- Enable SATR on sensor.live, you will get root_ca.cert.pem, ca.cert.pem and ca.private_key.pem.
+- Put the pem files into ./certs directory.
 
 ## Installation
 
