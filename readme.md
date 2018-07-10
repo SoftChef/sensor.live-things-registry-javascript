@@ -109,7 +109,7 @@ Change the default device private key file name.
 
 ## License
 ---
-This SDK is distributed under the Apache License, Version 2.0, see LICENSE.txt for more information.
+This SDK is distributed under the GNU GENERAL PUBLIC LICENSE Version 3, see LICENSE for more information.
 
 ## Support
 ---
