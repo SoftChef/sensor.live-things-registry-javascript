@@ -65,7 +65,9 @@ options = {
 }
 ```
 You can customize the thing name, please ensure uniqueness.
+
 The naming rule is follow AWS IoT: Must contain only alphanumeric characters and/or the following: -_:
+
 If your thing_name is null, finally the thing name will generate from device certificate.
 
 #### ThingRegistry.getThingName()
