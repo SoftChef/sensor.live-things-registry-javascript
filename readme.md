@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document will help your device connect to AWS IoT quickly. Mainly to speed up the process of certificate exchanging, make hardware use AWS legally authentication method to connect.
+This document will help your device connect to AWS IoT quickly. Mainly to speed up the process of certificate exchanging complied to AWS IoT authentication.
 
 ## Prepare
 
@@ -64,15 +64,15 @@ options = {
     organization_unit_name = 'IT'
 }
 ```
-You can customize the thing name, please ensure uniqueness.
+You can customize the thing name, please ensure the thing name is given uniquely.
 
-The naming rule is follow AWS IoT: Must contain only alphanumeric characters and/or the following: -_:
+The naming rule is based on AWS IoT requirement: Must contain only alphanumeric characters and/or the following: -_:
 
-If your thing_name is null, finally the thing name will generate from device certificate.
+If your thing_name is null, alternatively, the thing name will generate from the device certificate.
 
 #### ThingRegistry.getThingName()
 
-Get the thing name. Your customized name or from device certificate.
+Get the thing name. Your customized name or from the device certificate.
 
 #### ThingRegistry.getKeysPath()
 
@@ -116,4 +116,5 @@ This SDK is distributed under the GNU GENERAL PUBLIC LICENSE Version 3, see LICE
 
 ## Support
 
-If you have technical questions about sensor.live-atr, contact sensor.live support.
+If you have technical questions about sensor.live-atr, contact sensor.live support poke@sensor.live.
+
