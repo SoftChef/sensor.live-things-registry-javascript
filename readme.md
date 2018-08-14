@@ -18,7 +18,7 @@ sensor.live
 ## Installation
 
 ```
-npm install sensor.live-atr-javascript
+npm install sensor.live-things-registry
 ```
 
 ## Examples
