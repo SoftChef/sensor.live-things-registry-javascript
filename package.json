@@ -1,13 +1,28 @@
 {
   "name": "sensor.live-things-registry",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "",
   "main": "src/index.js",
-  "scripts": {
-    
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SoftChef/sensor.live-things-registry-javascript.git"
   },
+  "keywords": [
+    "sensor.live",
+    "IoT",
+    "mqtt",
+    "things",
+    "secure",
+    "certificate",
+    "registry"
+  ],
   "author": "SoftChef",
   "license": "SoftChef",
+  "bugs": {
+    "url": "https://github.com/SoftChef/sensor.live-things-registry-javascript/issues"
+  },
+  "homepage": "https://github.com/SoftChef/sensor.live-things-registry-javascript#readme",
   "dependencies": {
     "node-forge": "^0.7.5"
   }

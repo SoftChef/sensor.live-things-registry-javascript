@@ -1,4 +1,4 @@
-# sensor.live-atr-javascript
+# sensor.live-things-registry-javascript
 
 ## Overview
 
@@ -6,7 +6,11 @@ This document will help your device connect to AWS IoT quickly. Mainly to speed 
 
 ## Prepare
 
-Packages:
+Environment
+
+- Create "certs" directory in your develop path.
+
+Packages
 
 - AWS IoT SDK for JavaScript https://github.com/aws/aws-iot-device-sdk-js
 
@@ -18,7 +22,7 @@ sensor.live
 ## Installation
 
 ```
-npm install sensor.live-atr-javascript
+npm install sensor.live-things-registry
 ```
 
 ## Examples
@@ -116,5 +120,5 @@ This SDK is distributed under the GNU GENERAL PUBLIC LICENSE Version 3, see LICE
 
 ## Support
 
-If you have technical questions about sensor.live-atr, contact sensor.live support poke@sensor.live.
+If you have technical questions about sensor.live-things-registry, contact sensor.live support poke@sensor.live.
 
