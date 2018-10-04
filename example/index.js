@@ -1,5 +1,5 @@
-const aws_iot = require('aws-iot-device-sdk');
-const thing_registry = require('sensor.live-things-registry');
+const aws_iot = require('aws-iot-device-sdk')
+const ThingRegistry = require('sensor.live-things-registry')
 const config = {
     aws_iot: {
         endpoint: 'your aws iot endpoint',
@@ -7,12 +7,13 @@ const config = {
         debug: false
     }
 }
-let thing_registry.setCertsPath('./certs'); // you can change the default certificates folder
+const thing_registry = new ThingRegistry()
+let thing_registry.setCertsPath('./certs') // you can change the default certificates folder
 if (!thing_registry.hasDeviceCertificate()) {
-    thing_registry.generateDeviceCertificate();
+    thing_registry.generateDeviceCertificate()
 }
-let thing_name = thing_registry.getThingName();
-let keys_path = thing_registry.getKeysPath();
+let thing_name = thing_registry.getThingName()
+let keys_path = thing_registry.getKeysPath()
 let client_id = `device-${thing_name}`
 let thing_shadow = aws_iot.thingShadow({
     ...keys_path,
@@ -20,4 +21,4 @@ let thing_shadow = aws_iot.thingShadow({
     port: config.aws_iot.port,
     debug: config.aws_iot.debug,
     clientId: client_id
-});
+})

@@ -1,3 +1,1 @@
-let ThingRegistry = require('./ThingRegistry');
-
-module.exports = new ThingRegistry;
+module.exports = require('./ThingRegistry')
