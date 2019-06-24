@@ -39,7 +39,9 @@ const config = {
 }
 thing_registry.setCertsPath('./certs'); // you can change the default certificates folder
 if (!thing_registry.hasDeviceCertificate()) {
-    thing_registry.generateDeviceCertificate();
+    thing_registry.generateDeviceCertificate({
+        thing_name: '<YourDeviceUniqueName>'
+    });
 }
 let thing_name = thing_registry.getThingName();
 let keys_path = thing_registry.getKeysPath();
