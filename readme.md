@@ -27,7 +27,7 @@ npm install sensor.live-things-registry
 
 ## Examples
 
-```
+```js
 const aws_iot = require('aws-iot-device-sdk');
 const thing_registry = require('sensor.live-things-registry');
 const config = {
@@ -37,7 +37,7 @@ const config = {
         debug: false
     }
 }
-let thing_registry.setCertsPath('./certs'); // you can change the default certificates folder
+thing_registry.setCertsPath('./certs'); // you can change the default certificates folder
 if (!thing_registry.hasDeviceCertificate()) {
     thing_registry.generateDeviceCertificate();
 }
