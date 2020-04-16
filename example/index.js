@@ -1,5 +1,5 @@
 const aws_iot = require('aws-iot-device-sdk')
-const ThingRegistry = require('sensor.live-things-registry')
+const thing_registry = require('sensor.live-things-registry')
 const config = {
     aws_iot: {
         endpoint: 'your aws iot endpoint',
@@ -7,7 +7,6 @@ const config = {
         debug: false
     }
 }
-const thing_registry = new ThingRegistry()
 thing_registry.setCertsPath('./certs') // you can change the default certificates folder
 if (!thing_registry.hasDeviceCertificate()) {
     thing_registry.generateDeviceCertificate({
