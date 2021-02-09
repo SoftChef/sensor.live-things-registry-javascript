@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/SoftChef/sensor.live-things-registry-javascript#readme",
   "dependencies": {
-    "node-forge": "^0.7.5"
+    "node-forge": ">=0.10.0"
   }
 }
